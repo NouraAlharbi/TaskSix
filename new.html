@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+    </head>
+    <style>
+     
+        .but {
+            body {
+  background-color: white;}
+            color: green;
+            border: none;
+            font-size: 16px;
+            padding: 12px 28px;
+            border-radius: 4px;
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            width: 250px;
+            cursor: pointer;
+           
+         
+        }
+       
+          .button1, .button2, .button3{
+            display: block;
+            margin-top: 0;
+            margin-left: 550px;
+           
+          }
+          .button4 {
+            margin-left: 420px;
+          }
+         
+               
+       
+        html {
+          background: url(rob1.jpg) no-repeat center fixed;
+  background-size: cover;
+        }
+       
+       
+        h1{
+          font-family: "Lucida Console", Courier, monospace;
+          color: green;
+          font-weight: 900;
+          text-align: center;
+         
+        }
+    </style>
+    <body>
+     
+        <h1>  Click</h1>
+   
+      <form method="post" action="letter.php" target="_blank">
+     
+          <input type ="submit" name="button1"
+                class="but button1" id="button1" value="Forwards" />
+         
+          <input type ="submit" name="button2"
+                class="but button2" value="STOP" />
+         
+          <input type ="submit" name="button3"
+                class="but button3" value="Backwards" />
+         
+          <input type ="submit" name="button4"
+                class="but button4" value="Left" />
+         
+          <input type ="submit" name="button5"
+                class="but button5" value="Right" />
+         
+         
+      </form>
+           <script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "89cbe77e-5349-4607-ba80-531c936066f9", // The ID of this integration.
+      region: "au-syd", // The region your integration is hosted in.
+      serviceInstanceID: "27d74b06-ed02-4540-8101-c97e672272f4", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+           
+    </body>
+   
+   
+   
+</html>
